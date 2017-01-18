@@ -132,15 +132,6 @@ nav.Nav li.icon {
     color: black;
 }
 
-.weblink{
-    cursor: pointer;
-    transition: 0.3s;
-    float: left;
-}
-
-.weblink:hover{
-     opacity: 0.7;
-}
 
 /* modal--------------------------------------*/
 .images {
