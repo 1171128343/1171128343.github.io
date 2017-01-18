@@ -1,0 +1,406 @@
+/* 
+#334469 dark blue
+#A6D5F3 light blue
+#609ACD sky blue
+#68CCE5 cyan
+#5552A3 purple
+--------------------------------------------------------*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: white;
+    font-size: 100%;
+}
+
+#page{
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative
+}
+
+section::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* header -----------------------------------------------*/
+header {
+    background-image: url(../img/finalbg.jpg);
+    background-repeat: no-repeat;
+    height: 450px;
+    background-color: #334469;
+}
+
+header h1 {
+    font-size: 3em;
+    padding: 20px 0 20px 0;
+    margin: 0px;
+}
+
+#title {
+    display: none;
+}
+
+#hero {
+    position: absolute;
+    text-align: center;
+    left: 450px;
+    background-color: #A6D5F3;
+    color: white;
+    width: 40%;
+    top: 120px;
+    border-bottom-left-radius: 25px;
+    height: 140px;
+}
+
+/* nav ---------------------------------------------------*/
+h1.title {
+    position: absolute;
+    margin: 0;
+    color: white;
+    font-size: 2em;
+    padding: 5px 0 0 10px;
+}
+
+nav{
+    clear: left;
+}
+
+nav.Nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #334469;
+}
+
+nav.Nav li {
+    float: right;
+}
+
+nav.Nav li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: .3s;
+  font-size: 17px;
+}
+
+nav.Nav li a:hover {
+    background-color: #213047;
+}
+
+nav.Nav li.icon {
+    display: none;
+}
+
+/*  anchor tag --------------------------------------------*/
+a {
+    text-decoration: none;
+    color: white;
+}
+
+section.main div#suggestion a {
+    background-color: #334469;
+}
+
+section.sub div.content a {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+/* main ---------------------------------------------------*/
+.main{
+    background-color: #A6D5F3;
+    padding: 5px 5px;
+}
+
+section.main article {
+    padding: 0 20px 0 600px;
+    background: url(../img/ski3.jpg) no-repeat 20px 0px;
+    min-height: 330px;
+    font-size: 1.1em;
+}
+
+section.main div#suggestion a.btn {
+    padding: 5px;
+}
+
+/* sub -----------------------------------------------------*/
+br{
+    clear: left
+}
+
+section.sub aside {
+    position: relative;
+    float: left;
+    width: 33%;
+    text-align: center;
+
+}
+
+section.sub aside div.content {
+    border-radius: 25px;
+}
+
+section.sub aside div.content h3 {
+    text-align: center;
+    font-size: 2em;
+    padding-top: 5%;
+}
+
+section.sub aside div.content p{
+    font-size: 1.025em;
+    text-align: center;
+    padding: 0px 10% 5% 10%;
+}
+
+section.sub aside div.activity {
+    background-color: #609ACD;
+    min-height: 300px;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+section.sub aside div.housing {
+    background-color: #68CCE5;
+    min-height: 300px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+section.sub aside div.shop {
+    background-color: #5552A3;
+    min-height: 300px;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 20px;
+}
+
+
+
+/* footer ------------------------------------------------*/
+footer{
+    position: relative;
+    clear: left;
+    background-color: #334469;
+    height: 47px;
+    margin: 0;
+    padding: 0;
+}
+
+.copy {
+    position: absolute;
+    margin: 0;
+    padding: 15px;
+}
+
+.policy{
+    float: right;
+    padding: 15px 0px;
+    
+}
+
+footer div.policy a{
+    padding: 15px 20px 15px 10px;
+    font-size: 17px;
+}
+
+/* media -------------------------------------------------*/
+@media screen and (max-width:825px){
+
+    /* header */
+    header {
+        background-image: url(../img/finalbg850.jpg);
+        height: 310px;
+    }
+    header h1 {
+        font-size: 2em;
+    }
+
+    #hero {
+        left:300px;
+        top: 90px;
+        height: 110px;
+    }
+    
+    /* main */
+    section.main article {
+        padding: 0 20px 0 400px;
+        background: url(../img/ski351.jpg) no-repeat 20px 0px;
+        min-height: 300px;
+        font-size: 1.1em;
+    }
+    
+    /* sub */ 
+    section.sub aside  div.content{
+        min-height: 350px;
+    }
+}
+
+/* 625 ---------------------------------------------------*/
+@media screen and (max-width:625px){
+
+    /* header */
+    header {
+        background-image: url(../img/finalbg650.jpg);
+        height: 230px;
+    }
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    #hero {
+        position: relative;
+        left:230px;
+        top: 30px;
+        height: 90px;
+    }
+    
+    /* nav */
+    .title{
+        
+    }
+    
+    nav.Nav li {
+      display: none;
+    }
+    nav.Nav li.icon {
+        float: right;
+        display: inline-block;
+    }
+    nav.Nav.responsive {
+      position: relative;
+    }
+    nav.Nav.responsive li.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    nav.Nav.responsive li {
+        float: none;
+        display: inline;
+    }
+    nav.Nav.responsive li a {
+        display: block;
+        text-align: left;
+    }
+    
+    /* main */
+    section.main article {
+        padding:  160px 20px 0 20px;
+        background: url(../img/ski266.jpg) no-repeat 50% 0px;
+        min-height: 220px;
+        font-size: 1em;
+    }
+    
+    /* sub */
+    section.sub aside {
+        clear: left;
+        width: 100%;
+    }
+    
+    section.sub aside div.content{
+        min-height: 270px;
+    }
+    
+    /* footer */ 
+    footer div.policy a.display{
+        display: none;
+    }
+    
+    /* anchor */
+    section.main a {
+        font-size: .9em;
+    }
+}
+
+/* 425 ---------------------------------------------------*/
+@media screen and (max-width:425px){
+    
+    /* whole */
+    h1{
+        1.3em;
+    }
+    
+    /* header */
+    h1.title{
+        font-size: 2em;
+    }
+    
+    header {
+        background-image: url(../img/finalbg450.jpg);
+        height: 160px;
+    }
+    header h1 {
+        font-size: 1.1em;
+        padding-top: 5px;
+    }
+
+    #hero {
+        position: relative;
+        left:160px;
+        top: 20px;
+        height: 60px;
+    }
+    
+    /* main */
+    section.main article {
+        padding:  160px 20px 0 20px;
+        background: url(../img/ski266.jpg) no-repeat 50% 0px;
+        min-height: 220px;
+        font-size: .9em;
+    }
+    
+    /* nav */
+    nav.Nav li {
+      display: none;
+    }
+    nav.Nav li.icon {
+        float: right;
+        display: inline-block;
+    }
+    nav.Nav.responsive {
+      position: relative;
+    }
+    nav.Nav.responsive li.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    nav.Nav.responsive li {
+        float: none;
+        display: inline;
+    }
+    nav.Nav.responsive li a {
+        display: block;
+        text-align: left;
+    }
+
+    /* sub */ 
+    section.sub aside{
+        clear: left;
+        width: 100%;
+    }
+    section.sub aside  div.content{
+        min-height: 200px;
+        font-size: .9em;
+    }
+    
+    section.sub aside  div.content h3{
+        font-size: 1.3em;
+    }
+    
+    /* footer */ 
+    footer div.policy a.display{
+        display: none;
+    }
+}
+

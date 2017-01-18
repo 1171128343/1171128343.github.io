@@ -1,0 +1,295 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    text-align: center;
+    line-height: 200%;
+}
+
+section{
+    margin:50px 25%;
+}
+
+h1{
+  font-size: 2em;  
+}
+
+h2{
+    font-size: 1.75em; 
+}
+
+h3{
+    font-size: 1.5em; 
+}
+
+p{
+    font-size: 1.25em;
+}
+
+/* nav--------------------------------------*/
+nav{
+    clear: left;
+    line-height: normal;
+}
+
+nav.Nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+    float: right;
+}
+
+nav.Nav li {
+    float: left;
+}
+
+nav.Nav li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  transition: .3s;
+  font-size: 17px;
+    padding: 20px;
+}
+
+nav.Nav li a:hover {
+    color: orange;
+}
+
+nav.Nav li.icon {
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* header-------------------------------------*/
+header{
+    text-align: center;
+    height: 600px;
+    color: white;
+    background: url(../img/header.png) no-repeat center black;
+}
+
+header div.hero{
+    margin: 0;
+    
+}
+
+.triangle{
+    text-align: center;
+}
+
+/* main----------------------------------------*/
+
+#main p{
+    margin: 0 20%;
+}
+
+#main h2{
+    padding: 20px;
+    border-bottom: 1px solid orange;
+    margin: 0 15% 20px 15%;
+}
+
+/* sub----------------------------------------*/
+
+.sub{
+    margin: 100px 30%;
+}
+
+.sub h2{
+    padding: 20px;
+    border-bottom: 1px solid orange;
+    margin: 0 8% 20px 8%;
+}
+
+.sub a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.sub a:hover{
+    color: orange;
+    font-weight: bold;
+}
+
+.sub a:visited{
+    color: black;
+}
+
+/* footer-------------------------------------*/
+footer{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+footer p{
+    font-size: .8em;
+    padding: 20px;
+    margin: 0 20%;
+}
+
+/* media 800----------------------------------*/
+@media screen and (max-width:800px){
+    
+    header{
+        background: url(../img/header500.png) center no-repeat black;
+        height: 200px;
+    }
+    
+    /* nav */
+    nav.Nav ul{
+        float: none;
+    }
+    
+    nav.Nav li {
+      display: none;
+    }
+    nav.Nav li.icon {
+        float: right;
+        display: block;
+    }
+    nav.Nav.responsive {
+      position: relative;
+    }
+    nav.Nav.responsive li.icon
+    {
+       position: absolute;
+        top: 0;
+        right: 0;
+    }
+    nav.Nav.responsive li {
+        float: none;
+        display: inline;
+        margin: 0;
+        padding: 0;
+    }
+    nav.Nav.responsive li a {
+        display: block;
+        text-align: left;
+        padding: 20px;
+        font-size: 15px;
+    }
+    
+    /* header */
+    
+    header{
+        height: 400px;
+    }
+    
+    header div.hero{
+        padding-top: 130px;
+    }
+
+    .hero img{
+    }
+    
+    /* section */
+    
+    section{
+        margin: 0;
+    }
+    
+    #main{
+        margin: 40px 0;
+    }
+    
+    .sub{
+        margin: 50px 15%;
+    }
+}
+
+/* media 425----------------------------------*/
+@media screen and (max-width:425px){
+    
+    h2{
+        font-size: 1.5em;
+    }
+    
+    p{
+        font-size: 1em;
+    }
+    
+    /* nav */
+    nav.Nav ul{
+        float: none;
+    }
+    
+    nav.Nav li {
+      display: none;
+    }
+    nav.Nav li.icon {
+        float: right;
+        display: block;
+    }
+    nav.Nav.responsive {
+      position: relative;
+    }
+    nav.Nav.responsive li.icon
+    {
+       position: absolute;
+        top: 0;
+        right: 0;
+    }
+    nav.Nav.responsive li {
+        float: none;
+        display: inline;
+        margin: 0;
+        padding: 0;
+    }
+    nav.Nav.responsive li a {
+        display: block;
+        text-align: left;
+        padding: 20px;
+        font-size: 12px;
+    }
+    
+    /* header */
+    
+    header{
+        height: 200px;
+        background: url(../img/header200.png) center no-repeat black;
+    }
+    
+    .triangle img{
+        width: 50px;
+        height: auto;
+    }
+    
+    /* section */
+    section{
+        margin: 0;
+        padding: 0;
+    }
+    
+    #main h2{
+        margin: 0 5px;
+
+    }
+    
+    #main p{
+        margin: 5%;
+        padding: 0;
+    }
+    
+    .sub{
+        margin: 0 0 50px 0;
+        padding: 0;
+    }
+    
+    /* footer */
+    footer p{
+        font-size: .7em;
+        margin: 0;
+        padding: 10px;
+    }
+    
+}
+
