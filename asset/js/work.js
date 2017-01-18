@@ -10,7 +10,7 @@ function myFunction() {
 //-------------------------------------------------------
 function modal1(){      
     var modal = document.getElementById('myModal');
-    var img = document.getElementsByClassName('images')[0];
+    var img = document.getElementsByClassName('images')[2];
     var modalImg = document.getElementById("content");
             
     
@@ -27,7 +27,7 @@ function modal1(){
 //--------------------------------------------------------
 function modal2(){      
     var modal = document.getElementById('myModal');
-    var img = document.getElementsByClassName('images')[1];
+    var img = document.getElementsByClassName('images')[3];
     var modalImg = document.getElementById("content");
             
     
@@ -45,7 +45,7 @@ function modal2(){
 //--------------------------------------------------------
 function modal3(){      
     var modal = document.getElementById('myModal');
-    var img = document.getElementsByClassName('images')[2];
+    var img = document.getElementsByClassName('images')[4];
     var modalImg = document.getElementById("content");
             
 
