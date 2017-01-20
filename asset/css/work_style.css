@@ -80,6 +80,10 @@ nav.Nav li.icon {
     padding: 0;
 }
 
+.weblink{
+    min-height: 300px;
+}
+
 .pdf{
     float: left;
     width: 200px;
