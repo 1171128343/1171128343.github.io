@@ -1,0 +1,436 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+}
+
+section{
+    margin: 0 25%;
+}
+
+h1{
+  font-size: 2em;  
+}
+
+h2{
+    font-size: 1.75em; 
+}
+
+h3{
+    font-size: 1.5em; 
+}
+
+/* nav--------------------------------------*/
+nav{
+    clear: left;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    background-color: black;
+}
+
+nav.Nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+    float: right;
+}
+
+nav.Nav li {
+    float: left;
+}
+
+nav.Nav li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  transition: .3s;
+  font-size: 17px;
+    padding: 20px;
+}
+
+nav.Nav li a:hover {
+    color: orange;
+}
+
+nav.Nav li.icon {
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* main---------------------------------------*/
+
+.title{
+    text-align: center;
+}
+
+.smallimg{
+    margin-top: 50px;
+}
+
+.video{
+    float: left;
+    border: 0;
+    padding: 0;
+}
+
+.weblink{
+    min-height: 320px;
+}
+
+.spdf{
+    min-height: 300px;
+}
+
+.svideo{
+    min-height: 200px;
+}
+
+.simage{
+    min-height: 250px;
+}
+
+.pdf{
+    float: left;
+    width: 200px;
+    height: 250px;
+}
+
+.top{
+    margin-top: 50px;
+    border-top: 1px solid orange;
+}
+
+.info h2{
+    margin-left: 220px;
+}
+
+.info p{
+    margin-left: 220px;
+}
+
+.indent{
+    text-indent: 25px;
+}
+
+.work{
+    padding-bottom: 15px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid orange;
+}
+
+.end{
+    border-bottom: 0px;
+}
+
+.work a{
+    text-decoration:underline;
+    color: black;
+}
+
+.work a:hover{
+    color: orange;
+}
+
+.work a:visited{
+    color: black;
+}
+
+#page-number{
+    float: right;
+}
+
+.numbers{
+    text-align: center;
+    float: left;
+    margin: 10px;
+}
+
+.numbers a{
+    text-decoration: none;
+    color: black;
+}
+
+.numbers a:hover{
+    color: orange;
+}
+
+.numbers a:visited{
+    color: black;
+}
+
+#active{
+    color: orange;
+}
+
+/* modal--------------------------------------*/
+.images {
+    cursor: pointer;
+    transition: 0.3s;
+    float: left;
+}
+
+.images:hover {
+    opacity: 0.7;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 20px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9); 
+}
+
+.modal-content {
+    margin: auto;
+    padding: 10px;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    background-color: white;
+}
+
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: .6s;
+    animation-name: zoom;
+    animation-duration: .6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* footer-------------------------------------*/
+footer{
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: black;
+    clear: left;
+    clear: right;
+}
+
+footer p{
+    text-align: center;
+    margin: 0 20%;
+    padding: 20px;
+    font-size: .8em;
+}
+
+
+/* media 800----------------------------------*/
+@media screen and (max-width:800px){
+    
+    /* nav */
+    nav.Nav ul{
+        float: none;
+    }
+    
+    nav.Nav li {
+      display: none;
+    }
+    nav.Nav li.icon {
+        float: right;
+        display: block;
+    }
+    nav.Nav.responsive {
+      position: relative;
+    }
+    nav.Nav.responsive li.icon
+    {
+       position: absolute;
+        top: 0;
+        right: 0;
+    }
+    nav.Nav.responsive li {
+        float: none;
+        display: inline;
+        margin: 0;
+        padding: 0;
+    }
+    nav.Nav.responsive li a {
+        display: block;
+        text-align: left;
+        padding: 20px;
+        font-size: 15px;
+    }
+    
+    /* main */
+    .images{
+        float: none;
+    }
+    
+    .pdf {
+        float: none;
+    }
+    
+    .video{
+        float: none;
+    }
+    
+    .longpdf{
+        float: none;
+    }
+
+    .info h2{
+        margin-left: 0;
+        text-align: left;
+        padding-top: 20px;
+    }
+    
+    .info p{
+        margin-left: 0;
+        text-align: left;
+    }
+    
+    .info{
+        text-align: center;
+    }
+    
+    .top{
+        padding-top: 20px;
+    }
+    
+/* media 425----------------------------------*/
+@media screen and (max-width:425px){
+    
+    section{
+        margin: 0 10px;
+    }
+    
+    .title{
+        font-size: 1.5em;
+        margin: 30px 0 0 0;
+        padding: 0;
+    }
+    
+    h2{
+        font-size: 1.3em;
+    }
+    
+    p{
+        font-size: .9em;
+    }
+    
+    /* nav */
+    nav.Nav ul{
+        float: none;
+    }
+    
+    nav.Nav li {
+      display: none;
+    }
+    nav.Nav li.icon {
+        float: right;
+        display: block;
+    }
+    nav.Nav.responsive {
+      position: relative;
+    }
+    nav.Nav.responsive li.icon
+    {
+       position: absolute;
+        top: 0;
+        right: 0;
+    }
+    nav.Nav.responsive li {
+        float: none;
+        display: inline;
+        margin: 0;
+        padding: 0;
+    }
+    nav.Nav.responsive li a {
+        display: block;
+        text-align: left;
+        padding: 20px;
+        font-size: 12px;
+    }
+
+    /* footer */
+    footer p{
+        font-size: .7em;
+        margin: 0;
+        padding: 10px;
+    }
+    
+    /* main */
+    .images{
+        float: none;
+    }
+    
+    .pdf {
+        float: none;
+    }
+    
+    .video{
+        float: none;
+    }
+    
+    .longpdf{
+        float: none;
+    }
+
+    .info h2{
+        margin-left: 0;
+        text-align: left;
+        padding-top: 20px;
+    }
+    
+    .info p{
+        margin-left: 0;
+        text-align: left;
+    }
+    
+    .info{
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .top{
+        padding-top: 10px;
+    }
+    
+    .end{
+        
+    }
+    
+}
